@@ -70,3 +70,11 @@ $table_headings = [
   'subject'=>'Subject',
   'my_problems'=>'My Problems',
 ];
+
+$form = [
+  'create_user'=>'Create User',
+  'select'=>'-- Please Select --',
+  'edit_user'=>'Edit User',
+  'new_problem'=>'New Problem',
+  'edit_problem'=>'Edit Problem',
+];
