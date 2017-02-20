@@ -21,7 +21,7 @@ class User extends \Chronicle\Base {
   }
 
   public function before_validation() {
-    if ($this->password !== null) {
+    if ($this->get_attribute('password') !== null) {
       $this->password_digest = $this->hash_password($this->password);
     }
   }
@@ -46,6 +46,13 @@ class User extends \Chronicle\Base {
     }
   }
 
+  public static function specialists() {
+    return self::where(['role'=>'Specialist']);
+  }
+
+  public function is_specialist() {
+    return $this->role == 'Specialist';
+  }
 
 
 }

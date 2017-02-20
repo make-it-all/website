@@ -26,7 +26,6 @@ class UsersController extends ApplicationController {
   }
 
   public function update() {
-    exit();
     $this->user = User::find($this->params['id']);
     if ($this->user->update($this->user_params())) {
       $this->redirect_to('index', ['success'=>'user updated']);

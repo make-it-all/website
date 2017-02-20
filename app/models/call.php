@@ -24,6 +24,9 @@ class Call extends \Chronicle\Base {
     'operator_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
     'caller_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
     'description' => ['presence'=>true, ],
-
   ];
+
+  public function operator() {
+    return User::find_by(['id'=>$this->operator_id]);
+  }
 }

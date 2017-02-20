@@ -33,6 +33,9 @@
         <th><?php echo $this->i('table_headings.description'); ?></th>
         <th><?php echo $this->i('table_headings.assigned_to'); ?></th>
         <th><?php echo $this->i('table_headings.solution_id'); ?></th>
+        <?php if ($current_user->is_specialist()):?>
+          <th><?php echo $this->i('table_headings.my_problems'); ?></th>
+        <?php endif; ?>
         <th class="narrow_column"><?php echo $this->i('actions.edit'); ?></th>
         <th class="narrow_column"><?php echo $this->i('actions.delete'); ?></th>
       </tr>
@@ -50,6 +53,9 @@
               }
             ?>
           </td>
+          <?php if ($current_user->is_specialist()):?>
+            <td><?php echo $problem->assigned_to_id == $current_user->id(); ?></td>
+          <?php endif; ?>
           <td><?php echo $problem->solution_id; ?></td>
           <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/problems/$problem->id/edit"); ?></td>
           <td><?php echo $this->link_to($this->icon('trash-o'), "/problems/$problem->id", ['method'=>'DELETE']); ?></td>
