@@ -3,7 +3,7 @@
     <div id="page_title">
       <h1><?php echo $users->count() . ' ' . $this->i('titles.users'); ?></h1>
       <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new'), '/users/new'); ?>
+        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/users/new'); ?>
       </div>
     </div>
     <?php if (isset($facts)): ?>
@@ -44,8 +44,8 @@
           <td><?php echo $user->name; ?></td>
           <td><?php echo $user->email; ?></td>
           <td><?php echo $user->role; ?></td>
-          <td><?php echo $this->link_to('edit', "/users/$user->id/edit"); ?></td>
-            <td><?php echo $this->link_to('delete', "/users/$user->id", 'DELETE'); ?></td>
+          <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/users/$user->id/edit"); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/users/$user->id", 'DELETE'); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

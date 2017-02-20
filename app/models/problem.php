@@ -21,8 +21,6 @@ class Problem extends \Chronicle\Base {
 
   ];
 
-  }
-
   public function get_assigned_to() {
     return User::find($this->get_attribute('assigned_to')->get());
   }

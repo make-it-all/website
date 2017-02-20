@@ -3,7 +3,7 @@
     <div id="page_title">
       <h1><?php echo Personnel::count() . ' ' . $this->i('titles.personnel'); ?></h1>
       <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new'), '/personnel/new'); ?>
+        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/personnel/new'); ?>
       </div>
     </div>
     <?php if (isset($facts)): ?>
@@ -49,8 +49,8 @@
           <td><?php echo $personnel->job_title; ?></td>
           <td><?php echo $personnel->department()->name; ?></td>
           <td><?php echo $personnel->branch()->name; ?></td>
-          <td><?php echo $this->link_to('edit', "/personnel/$personnel->id/edit"); ?></td>
-            <td><?php echo $this->link_to('delete', "/personnel/$personnel->id", 'DELETE'); ?></td>
+          <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/personnel/$personnel->id/edit"); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/personnel/$personnel->id", 'DELETE'); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>
