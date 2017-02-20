@@ -9,6 +9,7 @@ class SessionsController extends ApplicationController {
   }
 
   public function create() {
+    var_dump($this->params);
     $this->email = strtolower($this->params['session']['email']);
     $password = strtolower($this->params['session']['password']);
     $user = User::find_by(['email' => $this->email]);

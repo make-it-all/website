@@ -26,9 +26,15 @@ class UsersController extends ApplicationController {
   }
 
   public function update() {
+    $this->redirect_to('/users', ['success'=>'user updated']);
+    return;
     $this->user = User::find($this->params['id']);
-    if ($this->user->update($this->user_params())) {
-      $this->redirect_to('index', ['success'=>'user updated']);
+    $attrs = $this->user->attributes();
+    $this->user->destroy();
+    $this->user = User::new($attrs);
+    $this->user->assign_attributes($this->user_params());
+    if ($this->user->save()) {
+      $this->redirect_to('/', ['success'=>'user updated']);
     } else {
       $this->render('edit');
     }

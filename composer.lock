@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/make-it-all/chronicle.git",
-                "reference": "505a369954800723be3be670a0be87b370309b0b"
+                "reference": "bd1815a56c331566627ea236640bf87452812a12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/make-it-all/chronicle/zipball/505a369954800723be3be670a0be87b370309b0b",
-                "reference": "505a369954800723be3be670a0be87b370309b0b",
+                "url": "https://api.github.com/repos/make-it-all/chronicle/zipball/bd1815a56c331566627ea236640bf87452812a12",
+                "reference": "bd1815a56c331566627ea236640bf87452812a12",
                 "shasum": ""
             },
             "type": "library",
@@ -43,7 +43,7 @@
                 "source": "https://github.com/make-it-all/chronicle/tree/master",
                 "issues": "https://github.com/make-it-all/chronicle/issues"
             },
-            "time": "2017-02-20 13:20:17"
+            "time": "2017-02-20 14:07:00"
         },
         {
             "name": "hexmodr/rack",
