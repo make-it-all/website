@@ -1,5 +1,5 @@
 <div class="page_actions">
-  <h1>Edit Personnel</h1>
+  <h1><?php echo $this->i('form.edit_personnel'); ?></h1>
 </div>
 
 <?php $this->form_for($personnel, '/personnel;', ['class'=>'narrow_form']); ?>
@@ -37,6 +37,6 @@
     </select>
   </div>
   <div class="actions">
-    <?php $this->submit_button('Update Personnel'); ?>
+    <?php $this->submit_button(echo $this->i('form.edit_personnel')); ?>
   </div>
 </form>
