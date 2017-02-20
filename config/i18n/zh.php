@@ -62,4 +62,5 @@ $table_headings = [
   'description'=>'描述',
   'keywords'=>'关键字',
   'subject'=>'主题',
+  'personnel_identifier'=>'Personnel ID',
 ];

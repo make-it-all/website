@@ -65,4 +65,5 @@ $table_headings = [
   'submitted_by'=>'Eingereicht von',
   'assigned_to'=>'Zugewiesen an',
   'solution_id'=>'Lösung',
+  'personnel_identifier'=>'Personnel ID',
 ];
