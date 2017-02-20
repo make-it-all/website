@@ -15,7 +15,7 @@ class UsersController extends ApplicationController {
   public function create() {
     $this->user = User::new($this->user_params());
     if ($this->user->save()) {
-      $this->redirect_to('index', ['success'=>'user created']);
+      $this->redirect_to('/users', ['success'=>'user created']);
     } else {
       $this->render('new');
     }
