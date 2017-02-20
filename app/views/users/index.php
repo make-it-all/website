@@ -12,11 +12,6 @@
       </div>
     <?php endif; ?>
   </div>
-  <div id="page_filter">
-    <div class="search_bar">
-      <?php $this->render('search_form'); ?>
-    </div>
-  </div>
 </div>
 
 <div id="page_body">

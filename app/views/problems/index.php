@@ -7,20 +7,6 @@
       </div>
     </div>
   </div>
-  <div id="page_filter">
-    <div class="filter">
-      <h4><?php echo $this->i('table_headings.type'); ?></h4>
-      <div class="filter_button">
-        <?php echo $this->link_to($this->i('titles.hardware') . $this->icon('desktop'),'#'); ?>
-      </div>
-      <div class="filter_button">
-        <?php echo $this->link_to($this->i('titles.software') . $this->icon('file-code-o'),'#'); ?>
-      </div>
-    </div>
-      <div class="search_bar">
-        <?php $this->render('search_form'); ?>
-      </div>
-  </div>
 </div>
 <div id="page_body">
   <?php $this->render('pagination', ['records' => $problems, 'offset' => $offset, 'total_records' => $total_records]); ?>
