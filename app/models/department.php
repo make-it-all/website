@@ -8,3 +8,4 @@ class Department extends \Chronicle\Base {
     'name' => ['presence'=>true,'length'=>['max',255]],
 
   ];
+}
