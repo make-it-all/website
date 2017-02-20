@@ -69,3 +69,15 @@ $table_headings = [
   'keywords'=>'الكلمات الدالة',
   'subject'=>'موضوع',
 ];
+
+$form = [
+  'create_user'=>'Create User',
+  'select'=>'-- Please Select --',
+  'edit_user'=>'Edit User',
+  'new_problem'=>'New Problem',
+  'edit_problem'=>'Edit Problem',
+  'edit_personnel'=>'Edit Personnel',
+  'new_personnel'=>'New Personnel',
+  'new_call'=>'New Call',
+  'edit_call'=>'Edit Call',
+];

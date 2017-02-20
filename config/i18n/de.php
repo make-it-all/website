@@ -1,5 +1,4 @@
 <?php
-
 /*
 The I18n (German) file contains variables for all the the German translations of the keywords on the website,
 Internationalisation (German)
@@ -68,4 +67,16 @@ $table_headings = [
   'description'=>'Beschreibung',
   'keywords'=>'Schlüsselwörter',
   'subject'=>'Thema',
+];
+
+$form = [
+  'create_user'=>'Create User',
+  'select'=>'-- Please Select --',
+  'edit_user'=>'Edit User',
+  'new_problem'=>'New Problem',
+  'edit_problem'=>'Edit Problem',
+  'edit_personnel'=>'Edit Personnel',
+  'new_personnel'=>'New Personnel',
+  'new_call'=>'New Call',
+  'edit_call'=>'Edit Call',
 ];
