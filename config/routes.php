@@ -1,8 +1,11 @@
 <?php
 
-$r->root('problems#index');
+$r->root('users#index');
 
-$r->resources('problems');
+$r->resources('calls', ['except'=>['show']]);
+$r->resources('problems', ['except'=>['show']]);
+$r->resources('personnel', ['except'=>['show']]);
+$r->resources('users', ['except'=>['show']]);
 
 $r->get('/login', 'sessions#new');
 $r->post('/login', 'sessions#create');
