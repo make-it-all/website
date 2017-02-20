@@ -1,16 +1,6 @@
 <?php
 
-/*
-  User (Model)
-  The user model is a php represntation of the table named `users`.
-  See \Chronicle\Base for more infomation.
-
-  @contributers Henry Morgan, Chris Head, Zach Nurcombe
-*/
-
-class User extends ApplicationModel {
-
-  private $roles;
+class User extends \Chronicle\Base {
 
   public static $table_name = 'users';
 
@@ -19,7 +9,7 @@ class User extends ApplicationModel {
     'email' => ['presence'=>true, 'length'=>['max', 255], 'format'=>true, 'uniqueness'=>true],
     'password_digest' => ['presence'=>true, 'length'=>['max', 255]],
     'personnel_id' => ['numericality'=>true, 'length'=>['max',11], 'uniqueness'=>true],
-  
+
   ];
 
   public static function new($attrs=[]) {

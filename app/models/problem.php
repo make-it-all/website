@@ -1,18 +1,11 @@
 <?php
 
-/*
-  Problem (Model)
-  The problem model is a php represntation of the table named `problems`.
-  See \Chronicle\Base for more infomation.
-
-  @contributers Henry Morgan, Chris Head, Zach Nurcombe
-*/
-
-class Problem extends ApplicationModel {
+class Problem extends \Chronicle\Base {
 
   public static $table_name = 'problems';
 
   public function call() {
+<<<<<<< HEAD
       Call::find_by(['id'=>$this->call_id]);
     }
 
@@ -27,5 +20,15 @@ class Problem extends ApplicationModel {
     'keywords' => ['presence'=>true]
 
   ];
+
+  }
+
+  public function get_assigned_to() {
+    return User::find($this->get_attribute('assigned_to')->get());
+  }
+
+  public function get_submitted_by() {
+    return User::find($this->get_attribute('submitted_by')->get());
+  }
 
 }

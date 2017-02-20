@@ -9,5 +9,5 @@ $database = [
   'host'     => 'localhost',
   'username' => 'root',
   'password' => '',
-  'database' => 'make-it-all'
+  'database' => 'make-it-new'
 ];

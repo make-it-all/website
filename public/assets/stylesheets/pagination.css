@@ -1,0 +1,38 @@
+/* Styled by Bema- contains all styling for pagination on page.  */
+
+#pagination{
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 15px;
+}
+
+#pagination_links{
+  flex-grow: 1;
+  padding-top:20px;
+  padding-bottom: 10pt;
+  flex-grow: 1;
+}
+
+#pagination_links a {
+    color: black;
+    float: center;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+#pagination_links a.active {
+    background-color:#f2b800;
+    color: white;
+    border-radius: 5px;
+}
+
+#pagination_links a:hover:not(.active) {
+    background-color: #f2b800;
+    border-radius: 5px;
+}
+
+#pagination_results{
+  float: right;
+  margin-right: 15px;
+  display: inline-table;
+}

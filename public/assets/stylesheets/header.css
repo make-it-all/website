@@ -1,0 +1,23 @@
+/* Styled by Nicole - contains styling for the header section of all pages */
+
+#header {
+  height: 50px;
+  background: #333;
+  padding-right: 15px;
+  font-size: 0.8rem;
+}
+
+#logo_container {
+  width: 230px;
+  display: inline-block;
+}
+
+#session_info {
+  height: 50px;
+  background: #333;
+  float: right;
+}
+
+#session_info a, #session_info p {
+  color: rgba(255, 255, 255, 0.8);
+}
