@@ -5,6 +5,6 @@
   <div id="session_info">
     <p>
       <?php echo $this->i('header.signed_in_message', ['name'=>$current_user->name]); ?>
-      <?php echo $this->link_to($this->i('header.logout'),'/logout', 'DELETE'); ?></p>
+      <?php echo $this->link_to($this->i('header.logout'),'/logout', ['method'=>'DELETE']); ?></p>
   </div>
 </header>

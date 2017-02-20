@@ -16,7 +16,7 @@ class ProblemsController extends ApplicationController {
     var_dump($this->problem_params());
     $this->problem = Problem::new($this->problem_params());
     if ($this->problem->save()) {
-      $this->redirect_to('index', ['success'=>'problem created']);
+      $this->redirect_to('/problems', ['success'=>'problem created']);
     } else {
       $this->render('new');
     }

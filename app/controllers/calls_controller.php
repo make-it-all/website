@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 class CallsController extends ApplicationController {
 
-  
+
     public function index() {
       $this->total_records = Call::all()->count();
       $this->offset = (($this->params['page'] ?? 1)-1)*10;
@@ -17,7 +17,7 @@ class CallsController extends ApplicationController {
       var_dump($this->call_params());
       $this->call = Call::new($this->call_params());
       if ($this->call->save()) {
-        $this->redirect_to('index', ['success'=>'call created']);
+        $this->redirect_to('/calls', ['success'=>'call created']);
       } else {
         $this->render('new');
       }

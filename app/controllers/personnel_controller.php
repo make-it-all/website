@@ -16,7 +16,7 @@ class PersonnelController extends ApplicationController {
     var_dump($this->personnel_params());
     $this->personnel = Personnel::new($this->personnel_params());
     if ($this->personnel->save()) {
-      $this->redirect_to('index', ['success'=>'personnel created']);
+      $this->redirect_to('/personnel', ['success'=>'personnel created']);
     } else {
       $this->render('new');
     }
