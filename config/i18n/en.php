@@ -46,7 +46,6 @@ $roles = [
 ];
 
 $table_headings = [
-  'id'=>'Personnel ID',
   'name'=>'Name',
   'email'=>'Email',
   'last_seen_at'=>'Last Seen At',
@@ -61,6 +60,7 @@ $table_headings = [
   'department_id'=>'Department',
   'telephone_number'=>'Phone Number',
   'specialization'=>'Specialization',
+  'personnel_identifier'=>'Personnel Id',
   'submitted_by'=>'Submitted By',
   'assigned_to'=>'Assigned To',
   'solution_id'=>'Solution',

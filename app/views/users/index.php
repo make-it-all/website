@@ -27,10 +27,11 @@
   <table class="index_table">
     <thead>
       <tr>
+        <th> <?php echo $this->i('table_headings.personnel_identifier'); ?></th>
         <th> <?php echo $this->i('table_headings.name'); ?></th>
         <th> <?php echo $this->i('table_headings.email'); ?></th>
         <th> <?php echo $this->i('table_headings.role'); ?></th>
-        <th>Manage</th>
+        <th>Edit</th>
         <th> <?php echo $this->i('actions.delete'); ?></th>
       </tr>
     </thead>
@@ -42,8 +43,8 @@
           </td>
           <td><?php echo $user->name; ?></td>
           <td><?php echo $user->email; ?></td>
-          <td><?php echo implode(', ', $user->roles()); ?></td>
-          <td><?php echo $this->link_to('manage', "/users/$user->id/edit"); ?></td>
+          <td><?php echo $user->role; ?></td>
+          <td><?php echo $this->link_to('edit', "/users/$user->id/edit"); ?></td>
             <td><?php echo $this->link_to('delete', "/users/$user->id", 'DELETE'); ?></td>
         </tr>
       <?php endforeach; ?>
