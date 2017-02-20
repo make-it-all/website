@@ -1,7 +1,7 @@
 <div id="page_head">
   <div id="page_info">
     <div id="page_title">
-      <h1><?php echo $problems->count() . ' ' . $this->i('titles.problems'); ?></h1>
+      <h1><?php echo Problem::count() . ' ' . $this->i('titles.problems'); ?></h1>
       <div id="page_actions">
         <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/problems/new'); ?>
       </div>

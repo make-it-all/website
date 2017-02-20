@@ -13,6 +13,12 @@ $header = [
   'logout'=>'Log Out',
 ];
 
+$login = [
+  'sign_in'=>'Sign In',
+  'password'=>'Password',
+  'login'=>'Login',
+];
+
 $pagination = [
   'showing_text'=>'Showing {{low}}-{{high}} of {{total}}',
 ];

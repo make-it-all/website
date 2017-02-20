@@ -13,6 +13,12 @@ $header = [
   'logout'=>'登出',
 ];
 
+$login = [
+  'sign_in'=>'Sign In',
+  'password'=>'Password',
+  'login'=>'Login',
+];
+
 $pagination = [
   'showing_text'=>'显示 {{low}}-{{high}} 的 {{total}}',
 ];

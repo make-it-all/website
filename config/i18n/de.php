@@ -14,6 +14,12 @@ $header = [
   'logout'=>'Ausloggen',
 ];
 
+$login = [
+  'sign_in'=>'Sign In',
+  'password'=>'Password',
+  'login'=>'Login',
+];
+
 $pagination = [
   'showing_text'=>'Showing 1-6 of 136',
 ];
