@@ -9,6 +9,7 @@ class User extends \Chronicle\Base {
     'email' => ['presence'=>true, 'length'=>['max', 255], 'format'=>true, 'uniqueness'=>true],
     'password_digest' => ['presence'=>true, 'length'=>['max', 255]],
     'personnel_id' => ['numericality'=>true, 'length'=>['max',11], 'uniqueness'=>true],
+    'role' => ['presence'=>true, 'length'=>['max',255],],
 
   ];
 
