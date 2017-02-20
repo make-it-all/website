@@ -66,3 +66,11 @@ Begin GET to / on localhost at Mon, 20 Feb 2017 09:57:22 +0000
 Finish 500 in 19.425ms
 Begin GET to /users on localhost at Mon, 20 Feb 2017 09:57:27 +0000
 Finish 404 in 2.289ms
+Begin GET to /users on localhost at Mon, 20 Feb 2017 10:02:20 +0000
+Finish 500 in 3ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:02:20 +0000
+Finish 404 in 0.315ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:04:34 +0000
+Finish 404 in 3.76ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:05:33 +0000
+Finish 404 in 0.231ms

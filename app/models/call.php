@@ -8,4 +8,16 @@ class Call extends \Chronicle\Base {
     return Problem::where(['call_id'=>$this->id])->results();
   }
 
+  public function caller(){
+    return Personnel::find($this->caller_id);
+  }
+
+  public function operator(){
+   return User::find($this->operator_id);
+  }
+
+  public function updated_by(){
+   return User::find($this->updated_by);
+  }
+
 }
