@@ -5,7 +5,7 @@ class Problem extends \Chronicle\Base {
   public static $table_name = 'problems';
 
   public function call() {
-<<<<<<< HEAD
+
       Call::find_by(['id'=>$this->call_id]);
     }
 
