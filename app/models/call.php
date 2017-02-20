@@ -13,7 +13,18 @@ class Call extends \Chronicle\Base {
   }
 
   public function operator(){
-   return User::find($this->operator_id);
+
+    return User::find($this->operator_id);
   }
 
+  public function updated_by(){
+    return User::find($this->updated_by);
+  }
+
+  public static $validations = [
+    'operator_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
+    'caller_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
+    'description' => ['presence'=>true, ],
+
+  ];
 }

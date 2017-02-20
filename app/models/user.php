@@ -1,5 +1,5 @@
 <?php
-//ch
+
 class User extends \Chronicle\Base {
 
   public static $table_name = 'users';
@@ -8,7 +8,8 @@ class User extends \Chronicle\Base {
     'name' => ['presence'=>true, 'length'=>['max', 255]],
     'email' => ['presence'=>true, 'length'=>['max', 255], 'format'=>true, 'uniqueness'=>true],
     'password_digest' => ['presence'=>true, 'length'=>['max', 255]],
-    'personel_id' => ['presence'=>true]
+    'personnel_id' => ['numericality'=>true, 'length'=>['max',11], 'uniqueness'=>true],
+
   ];
 
   public static function new($attrs=[]) {
