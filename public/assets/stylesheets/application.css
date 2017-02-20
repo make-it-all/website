@@ -45,21 +45,25 @@
   opacity: 0.6;
 }
 
-#page_actions{
+#page_title h1 {
+  vertical-align: middle;
+}
+
+#page_title a{
   border-radius: 5px;
   background-color: #f2b800;
   padding: 12px;
-  width: 70px;
   height: 40px;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
-  font-weight: bold;
   margin-left: 20px;
+  color: white;
 }
 
-#page_actions a{
-  color: white;
+#page_title i{
+  margin-left: 10px;
 }
 
 #new_calls_info{
