@@ -15,7 +15,7 @@ class UsersController extends ApplicationController {
   public function create() {
     $this->user = User::new($this->user_params());
     if ($this->user->save()) {
-      $this->redirect_to('index', ['success'=>'user created']);
+      $this->redirect_to('/', ['success'=>'user created']);
     } else {
       $this->render('new');
     }
@@ -41,7 +41,7 @@ class UsersController extends ApplicationController {
   }
 
   private function user_params() {
-    return $this->params->require('user')->permit('name', 'email', 'password', 'personnel_id');
+    return $this->params->require('user')->permit('name', 'email', 'password', 'personnel_id', 'role');
   }
 
 }

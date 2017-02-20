@@ -2,9 +2,7 @@
   <div id="page_info">
     <div id="page_title">
       <h1><?php echo $users->count() . ' ' . $this->i('titles.users'); ?></h1>
-      <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/users/new'); ?>
-      </div>
+      <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/users/new'); ?>
     </div>
     <?php if (isset($facts)): ?>
       <div id="page_stats">

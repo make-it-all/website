@@ -1,12 +1,5 @@
 /* Styled by Nicole - contains styling for the filter elements such as the search bar and type filters*/
 
-#page_filter{
-  display: flex;
-  flex-direction: column;
-  /*flex-grow: 1;*/
-  float: right;
-}
-
 .filter{
   background-color: #f9f9f9;
   display: flex;
