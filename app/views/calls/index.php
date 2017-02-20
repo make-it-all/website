@@ -31,8 +31,8 @@
         <th> <?php echo $this->i('table_headings.caller_id'); ?></th>
         <th> <?php echo $this->i('table_headings.updated_by'); ?></th>
         <th> <?php echo $this->i('table_headings.description'); ?></th>
-        <th> <?php echo $this->i('actions.edit'); ?></th>
-        <th> <?php echo $this->i('actions.delete'); ?></th>
+        <th class="narrow_column"> <?php echo $this->i('actions.edit'); ?></th>
+        <th class="narrow_column"> <?php echo $this->i('actions.delete'); ?></th>
       </tr>
     </thead>
     <tbody>

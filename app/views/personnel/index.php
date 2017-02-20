@@ -35,8 +35,8 @@
         <th> <?php echo $this->i('table_headings.job_title'); ?></th>
         <th> <?php echo $this->i('table_headings.department_id'); ?></th>
         <th> <?php echo $this->i('table_headings.branch_id'); ?></th>
-        <th> <?php echo $this->i('actions.edit'); ?></th>
-        <th> <?php echo $this->i('actions.delete'); ?></th>
+        <th class="narrow_column"> <?php echo $this->i('actions.edit'); ?></th>
+        <th class="narrow_column"> <?php echo $this->i('actions.delete'); ?></th>
       </tr>
     </thead>
     <tbody>
