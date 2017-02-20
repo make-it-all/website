@@ -42,7 +42,7 @@ class ProblemsController extends ApplicationController {
   }
 
   private function problem_params() {
-    return $this->params->require('problem')->permit('type', 'description', 'keywords', 'problem_id');
+    return $this->params->require('problem')->permit('call_id', 'description', 'subject', 'keywords', 'submitted_by', 'assigned_to', 'worked_on', 'solution_id');
   }
 
 }

@@ -40,8 +40,8 @@
       <?php foreach($problems as $problem): ?>
         <tr>
           <td><?php echo $problem->description; ?></td>
-          <td><?php echo $problem->submitted_by->name; ?></td>
-          <td><?php echo $problem->assigned_to->name; ?></td>
+          <td><?php echo $problem->submitted_by; ?></td>
+          <td><?php echo $problem->assigned_to; ?></td>
           <td><?php echo $problem->solution_id; ?></td>
           <td><?php echo $this->link_to('edit', "/problems/$problem->id/edit"); ?></td>
           <td><?php echo $this->link_to('delete', "/problems/$problem->id", 'DELETE'); ?></td>
