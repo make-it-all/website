@@ -10,13 +10,18 @@
   <?php $this->text_field($problem, 'subject'); ?>
   <?php $this->text_field($problem, 'keywords'); ?>
   <?php $this->text_field($problem, 'description'); ?>
-  <?php
-    if ($problem->assigned_to !== null) {
-      $this->text_field($problem, 'assigned_to', '');
-    } else {
-      $this->text_field($problem, 'assigned_to');
-    } ?>
-  <?php $this->text_field($problem, 'solution_id'); ?>
+  <div class="field">
+    <label for="problems_assigned_to">Specialist</label>
+    <select id="problems_assigned_to" name="problems[assigned_to]" data-personnel-selector='true'>
+      <option value="">-- Please Select -- </option>
+      <?php foreach (User::specialists()->order('name ASC')->results() as $user): ?>
+        <?php if ($problem->assigned_to == $user->id()): ?>
+          <option value="<?php echo $user->id(); ?>" selected data-email="<?php echo $user->email; ?>"><?php echo $user->name; ?></option>
+        <?php else: ?>
+          <option value="<?php echo $user->id(); ?>" data-email="<?php echo $user->email; ?>"><?php echo $user->name; ?></option>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    </select>
   <div class="actions">
     <?php $this->submit_button('Update Problem'); ?>
   </div>
