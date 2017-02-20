@@ -130,3 +130,23 @@ Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:26:58 +0000
 Finish 404 in 0.332ms
 Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:28:15 +0000
 Finish 404 in 4.013ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:29:29 +0000
+Finish 404 in 0.29ms
+Begin GET to /personnel on localhost at Mon, 20 Feb 2017 10:29:37 +0000
+Finish 404 in 31.517ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:29:37 +0000
+Finish 404 in 0.921ms
+Begin GET to /personnel on localhost at Mon, 20 Feb 2017 10:31:42 +0000
+Finish 404 in 38.014ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:31:43 +0000
+Finish 404 in 0.355ms
+Begin GET to /users on localhost at Mon, 20 Feb 2017 10:32:46 +0000
+Finish 500 in 21.318ms
+Begin GET to /users on localhost at Mon, 20 Feb 2017 10:33:24 +0000
+Finish 500 in 22.573ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:33:25 +0000
+Finish 404 in 1.012ms
+Begin GET to /users on localhost at Mon, 20 Feb 2017 10:33:33 +0000
+Finish 500 in 24.304ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 10:33:34 +0000
+Finish 404 in 0.474ms
