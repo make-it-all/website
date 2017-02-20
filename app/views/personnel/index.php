@@ -3,7 +3,7 @@
     <div id="page_title">
       <h1><?php echo Personnel::count() . ' ' . $this->i('titles.personnel'); ?></h1>
       <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new'), '/personnel/new'); ?>
+        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/personnel/new'); ?>
       </div>
     </div>
     <?php if (isset($facts)): ?>
