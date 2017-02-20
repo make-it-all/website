@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2017 at 10:56 AM
+-- Generation Time: Feb 20, 2017 at 11:19 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -23,25 +23,48 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `branches`
+--
+
+CREATE TABLE `branches` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `calls`
 --
 
 CREATE TABLE `calls` (
   `id` int(11) UNSIGNED NOT NULL,
   `operator_id` int(11) UNSIGNED DEFAULT NULL,
-  `caller_id` int(11) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+  `caller_id` int(11) UNSIGNED DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `calls`
 --
 
-INSERT INTO `calls` (`id`, `operator_id`, `caller_id`) VALUES
-(1, 2, 6),
-(2, 4, 8),
-(3, 4, 7),
-(4, 4, 7),
-(5, 2, 3);
+INSERT INTO `calls` (`id`, `operator_id`, `caller_id`, `description`) VALUES
+(1, 2, 6, ''),
+(2, 4, 8, ''),
+(3, 4, 7, ''),
+(4, 4, 7, ''),
+(5, 2, 3, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `departments`
+--
+
+CREATE TABLE `departments` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 -- --------------------------------------------------------
 
@@ -51,35 +74,35 @@ INSERT INTO `calls` (`id`, `operator_id`, `caller_id`) VALUES
 
 CREATE TABLE `personnel` (
   `id` int(11) UNSIGNED NOT NULL,
-  `personnel_identifier` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `job_title` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `telephone_number` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `branch name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `department name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `personnel_identifier` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `job_title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `telephone_number` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `branch_id` int(11) NOT NULL,
+  `department_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `personnel`
 --
 
-INSERT INTO `personnel` (`id`, `personnel_identifier`, `name`, `job_title`, `email`, `telephone_number`, `branch name`, `department name`) VALUES
-(1, '165165', 'Alice', 'Senior Operator', 'alice@make.com', '0531234122', '1', '6'),
-(2, '124456', 'Bob', 'Operator', 'bob@make.com', '01234463623', '2', '6'),
-(3, '456678', 'Mark', 'Secretary', 'mark@make.com', '0146431246', '3', '5'),
-(4, '973568', 'Jack', 'Accountant', 'jack@make.com', '01234014045', '4', '4'),
-(5, 'B09867', 'James', 'Cleaner', 'James@make.com', '0123402350345', '5', '9'),
-(6, 'M785675', 'Sarah', 'Admin', 'sarah@make.com', '012305214', '1', '7'),
-(7, 'GHN456', 'Laura', 'Specialist', 'laura@make.com', '012404601234', '2', '2'),
-(8, 'BO33', 'Bossman', 'Boss', 'boss@make.com', '012405125', '3', '7'),
-(9, 'ASC235', 'Generic Employee 1', 'Personnel Manager', 'ge1@make.com', '012405324', '4', '7'),
-(10, '23576BBE', 'Tiffany', 'Head of Marketing', 'tiffany@make.com', '012405301', '5', '3'),
-(11, '1452124', 'Tom', 'Operator', 'tom@make.com', '0123054322', '1', '6'),
-(12, 'GHT2343', 'Greg', 'Lead Admin', 'greg@make.com', '0145632412', '2', '7'),
-(13, 'GHJ234756', 'Lily', 'Temp Admin', 'lily@make.com', '012344235', '3', '7'),
-(14, '12435423', 'Rob', 'Specialist', 'Rob@make.com', '013403521', '4', '2'),
-(15, 'E2356', 'Alex', 'Senior Specialist', 'alex@make.com', '03450763354', '5', '7');
+INSERT INTO `personnel` (`id`, `personnel_identifier`, `name`, `job_title`, `email`, `telephone_number`, `branch_id`, `department_id`) VALUES
+(1, '165165', 'Alice', 'Senior Operator', 'alice@make.com', '0531234122', 1, 6),
+(2, '124456', 'Bob', 'Operator', 'bob@make.com', '01234463623', 2, 6),
+(3, '456678', 'Mark', 'Secretary', 'mark@make.com', '0146431246', 3, 5),
+(4, '973568', 'Jack', 'Accountant', 'jack@make.com', '01234014045', 4, 4),
+(5, 'B09867', 'James', 'Cleaner', 'James@make.com', '0123402350345', 5, 9),
+(6, 'M785675', 'Sarah', 'Admin', 'sarah@make.com', '012305214', 1, 7),
+(7, 'GHN456', 'Laura', 'Specialist', 'laura@make.com', '012404601234', 2, 2),
+(8, 'BO33', 'Bossman', 'Boss', 'boss@make.com', '012405125', 3, 7),
+(9, 'ASC235', 'Generic Employee 1', 'Personnel Manager', 'ge1@make.com', '012405324', 4, 7),
+(10, '23576BBE', 'Tiffany', 'Head of Marketing', 'tiffany@make.com', '012405301', 5, 3),
+(11, '1452124', 'Tom', 'Operator', 'tom@make.com', '0123054322', 1, 6),
+(12, 'GHT2343', 'Greg', 'Lead Admin', 'greg@make.com', '0145632412', 2, 7),
+(13, 'GHJ234756', 'Lily', 'Temp Admin', 'lily@make.com', '012344235', 3, 7),
+(14, '12435423', 'Rob', 'Specialist', 'Rob@make.com', '013403521', 4, 2),
+(15, 'E2356', 'Alex', 'Senior Specialist', 'alex@make.com', '03450763354', 5, 7);
 
 -- --------------------------------------------------------
 
@@ -94,10 +117,10 @@ CREATE TABLE `problems` (
   `assigned_to` int(11) UNSIGNED DEFAULT NULL,
   `worked_on` tinyint(1) NOT NULL DEFAULT '0',
   `solution_id` int(11) UNSIGNED DEFAULT NULL,
-  `description` text,
-  `subject` text,
-  `keywords` text
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+  `description` text COLLATE utf8_unicode_ci,
+  `subject` text COLLATE utf8_unicode_ci,
+  `keywords` text COLLATE utf8_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `problems`
@@ -117,8 +140,8 @@ INSERT INTO `problems` (`id`, `call_id`, `submitted_by`, `assigned_to`, `worked_
 CREATE TABLE `solutions` (
   `id` int(11) UNSIGNED NOT NULL,
   `provided_by` int(11) UNSIGNED DEFAULT NULL,
-  `description` text
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+  `description` text COLLATE utf8_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `solutions`
@@ -144,8 +167,8 @@ INSERT INTO `solutions` (`id`, `provided_by`, `description`) VALUES
 
 CREATE TABLE `specializations` (
   `id` int(11) UNSIGNED NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `specializations`
@@ -171,11 +194,11 @@ INSERT INTO `specializations` (`id`, `name`) VALUES
 
 CREATE TABLE `users` (
   `id` int(11) UNSIGNED NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `password_digest` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password_digest` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `personnel_id` int(11) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `users`
@@ -199,6 +222,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `personnel_id`) V
 --
 
 --
+-- Indexes for table `branches`
+--
+ALTER TABLE `branches`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `calls`
 --
 ALTER TABLE `calls`
@@ -207,12 +236,18 @@ ALTER TABLE `calls`
   ADD KEY `caller_id` (`caller_id`);
 
 --
+-- Indexes for table `departments`
+--
+ALTER TABLE `departments`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `personnel`
 --
 ALTER TABLE `personnel`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `personnel_id` (`personnel_identifier`),
-  ADD KEY `department_id` (`department name`);
+  ADD KEY `department_id` (`department_id`);
 
 --
 -- Indexes for table `problems`

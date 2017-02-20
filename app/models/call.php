@@ -16,8 +16,4 @@ class Call extends \Chronicle\Base {
    return User::find($this->operator_id);
   }
 
-  public function updated_by(){
-   return User::find($this->updated_by);
-  }
-
 }
