@@ -6,10 +6,16 @@
 
   <?php $this->render('form_errors', ['record'=>$problem]); ?>
 
+  <?php $this->text_field($problem, 'call_id'); ?>
   <?php $this->text_field($problem, 'subject'); ?>
   <?php $this->text_field($problem, 'keywords'); ?>
   <?php $this->text_field($problem, 'description'); ?>
-  <?php $this->text_field($problem, 'assigned_to->name'); ?>
+  <?php
+    if ($problem->assigned_to !== null) {
+      $this->text_field($problem, 'assigned_to', '');
+    } else {
+      $this->text_field($problem, 'assigned_to');
+    } ?>
   <?php $this->text_field($problem, 'solution_id'); ?>
   <div class="actions">
     <?php $this->submit_button('Create Problem'); ?>
