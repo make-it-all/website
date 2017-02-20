@@ -31,9 +31,6 @@ $titles = [
   'personnel'=>'Personal',
   'users'=>'Benutzer',
   'reports'=>'Berichte',
-  'settings'=>'Einstellungen',
-  'hardware'=>'Hardware',
-  'software'=>'Software',
   'title'=>'Alles Macher',
   ];
 
@@ -53,16 +50,13 @@ $roles = [
 ];
 
 $table_headings = [
-  'id'=>'ID',
   'name'=>'Name',
   'email'=>'Email',
-  'last_seen_at'=>'Zuletzt gesehen bei',
   'role'=>'Arbeit',
   'type'=>'Art',
   'operator_id'=>'Operator ID',
   'caller_id'=>'Anrufer ID',
   'updated_by'=>'Aktualisiert von',
-  'updated_at'=>'Aktualisiert am',
   'job_title'=>'Berufsbezeichnung',
   'branch_id'=>'Niederlassung',
   'department_id'=>'Abteilung',
@@ -71,5 +65,7 @@ $table_headings = [
   'submitted_by'=>'Eingereicht von',
   'assigned_to'=>'Zugewiesen an',
   'solution_id'=>'Lösung',
-  'personnel_identifier'=>'Personnel ID',
+  'description'=>'Description',
+  'keywords'=>'Keywords',
+  'subject'=>'Subject',
 ];

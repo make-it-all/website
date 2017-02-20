@@ -68,5 +68,4 @@ $table_headings = [
   'description'=>'Description',
   'keywords'=>'Keywords',
   'subject'=>'Subject',
-  'personnel_identifier'=>'Personnel ID'
 ];

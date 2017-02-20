@@ -30,9 +30,6 @@ $titles = [
   'personnel'=>'Personnel',
   'users'=>'Users',
   'reports'=>'Reports',
-  'settings'=>'Settings',
-  'hardware'=>'Hardware ',
-  'software'=>'Software ',
   'title'=>'Make It All',
   ];
 
@@ -54,13 +51,11 @@ $roles = [
 $table_headings = [
   'name'=>'Name',
   'email'=>'Email',
-  'last_seen_at'=>'Last Seen At',
   'role'=>'Role',
   'type'=>'Type',
   'operator_id'=>'Operator',
   'caller_id'=>'Caller',
   'updated_by'=>'Updated By',
-  'updated_at'=>'Updated At',
   'job_title'=>'Job Title',
   'branch_id'=>'Branch',
   'department_id'=>'Department',
@@ -73,5 +68,4 @@ $table_headings = [
   'description'=>'Description',
   'keywords'=>'Keywords',
   'subject'=>'Subject',
-  'personnel_identifier'=>'Personnel ID',
 ];
