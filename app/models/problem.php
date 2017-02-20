@@ -9,6 +9,10 @@ class Problem extends \Chronicle\Base {
       Call::find_by(['id'=>$this->call_id]);
     }
 
+    public function specialization(){
+      Specialization::find_by(['id'=>$this->specializations]);
+    }
+
   public static $validations = [
     'call_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
     'submitted_by' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],

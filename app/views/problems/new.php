@@ -7,7 +7,21 @@
   <?php $this->render('form_errors', ['record'=>$problem]); ?>
 
   <?php $this->text_field($problem, 'call_id'); ?>
-  <?php $this->text_field($problem, 'subject'); ?>
+
+  <div class="field">
+    <label for="specializations">Specializations</label>
+    <select id="specializations" name="specializations" data-personnel-selector='true'>
+      <option value="">-- Please Select -- </option>
+      <?php foreach (Specialization::all()->order('name ASC')->results() as $specialization): ?>
+        <?php if ($problem->specializations == $specialization->id()): ?>
+          <option value="<?php echo $specialization->id(); ?>"><?php echo $specialization->name; ?></option>
+        <?php else: ?>
+          <option value="<?php echo $specialization->id(); ?>"><?php echo $specialization->name; ?></option>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    </select>
+  </div>
+
   <?php $this->text_field($problem, 'keywords'); ?>
   <?php $this->text_field($problem, 'description'); ?>
 
