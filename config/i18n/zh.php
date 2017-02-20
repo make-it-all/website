@@ -14,9 +14,9 @@ $header = [
 ];
 
 $login = [
-  'sign_in'=>'Sign In',
-  'password'=>'Password',
-  'login'=>'Login',
+  'sign_in'=>'签到',
+  'password'=>'密码',
+  'login'=>'登录',
 ];
 
 $pagination = [
