@@ -27,11 +27,10 @@
   <table class="index_table">
     <thead>
       <tr>
-        <th> <?php echo $this->i('table_headings.id'); ?></th>
         <th> <?php echo $this->i('table_headings.operator_id'); ?></th>
         <th> <?php echo $this->i('table_headings.caller_id'); ?></th>
         <th> <?php echo $this->i('table_headings.updated_by'); ?></th>
-        <th> <?php echo $this->i('table_headings.updated_at'); ?></th>
+        <th> <?php echo $this->i('table_headings.description'); ?></th>
         <th> <?php echo $this->i('actions.edit'); ?></th>
         <th> <?php echo $this->i('actions.delete'); ?></th>
       </tr>
@@ -39,13 +38,10 @@
     <tbody>
       <?php foreach($calls as $call): ?>
         <tr>
-          <td>
-            <?php echo $call->id; ?>
-          </td>
           <td><?php echo $call->operator()->name; ?></td>
           <td><?php echo $call->caller()->name; ?></td>
-          <td><?php echo $call->updated_by()->name; ?></td>
-          <td><?php echo $call->updated_at; ?></td>
+          <td><?php echo $call->operator()->name; ?></td>
+          <td><?php echo $call->description; ?></td>
           <td><?php echo $this->link_to('edit', "/calls/$call->id/edit"); ?></td>
           <td><?php echo $this->link_to('delete', "/calls/$call->id", 'DELETE'); ?></td>
         </tr>

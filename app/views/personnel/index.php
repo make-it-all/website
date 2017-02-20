@@ -42,9 +42,7 @@
     <tbody>
       <?php foreach($personnels as $personnel): ?>
         <tr>
-          <td>
-            <?php echo $personnel->personnel_identifier; ?>
-          </td>
+          <td><?php echo $personnel->personnel_identifier; ?></td>
           <td><?php echo $personnel->name; ?></td>
           <td><?php echo $personnel->email; ?></td>
           <td><?php echo $personnel->telephone_number; ?></td>

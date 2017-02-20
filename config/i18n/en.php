@@ -46,14 +46,14 @@ $roles = [
 ];
 
 $table_headings = [
-  'id'=>'ID',
+  'id'=>'Personnel ID',
   'name'=>'Name',
   'email'=>'Email',
   'last_seen_at'=>'Last Seen At',
   'role'=>'Role',
   'type'=>'Type',
-  'operator_id'=>'Operator ID',
-  'caller_id'=>'Caller ID',
+  'operator_id'=>'Operator',
+  'caller_id'=>'Caller',
   'updated_by'=>'Updated By',
   'updated_at'=>'Updated At',
   'job_title'=>'Job Title',
@@ -64,4 +64,7 @@ $table_headings = [
   'submitted_by'=>'Submitted By',
   'assigned_to'=>'Assigned To',
   'solution_id'=>'Solution',
+  'description'=>'Description',
+  'keywords'=>'Keywords',
+  'subject'=>'Subject',
 ];

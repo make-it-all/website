@@ -27,10 +27,8 @@
   <table class="index_table">
     <thead>
       <tr>
-        <th> <?php echo $this->i('table_headings.id'); ?></th>
         <th> <?php echo $this->i('table_headings.name'); ?></th>
         <th> <?php echo $this->i('table_headings.email'); ?></th>
-        <th> <?php echo $this->i('table_headings.last_seen_at'); ?></th>
         <th> <?php echo $this->i('table_headings.role'); ?></th>
         <th>Manage</th>
         <th> <?php echo $this->i('actions.delete'); ?></th>
@@ -44,7 +42,6 @@
           </td>
           <td><?php echo $user->name; ?></td>
           <td><?php echo $user->email; ?></td>
-          <td><?php echo $user->last_seen_at; ?></td>
           <td><?php echo implode(', ', $user->roles()); ?></td>
           <td><?php echo $this->link_to('manage', "/users/$user->id/edit"); ?></td>
             <td><?php echo $this->link_to('delete', "/users/$user->id", 'DELETE'); ?></td>
