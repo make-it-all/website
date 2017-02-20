@@ -28,6 +28,10 @@ th {
 
 }
 
+th.narrow_column {
+  width: 1px;
+}
+
 td {
     border-right: 1px solid #fff;
     border-left: 1px solid #e8e8e8;

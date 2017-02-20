@@ -27,12 +27,12 @@
   <table class="index_table">
     <thead>
       <tr>
-        <th> <?php echo $this->i('table_headings.personnel_identifier'); ?></th>
-        <th> <?php echo $this->i('table_headings.name'); ?></th>
-        <th> <?php echo $this->i('table_headings.email'); ?></th>
-        <th> <?php echo $this->i('table_headings.role'); ?></th>
-        <th>Edit</th>
-        <th> <?php echo $this->i('actions.delete'); ?></th>
+        <th><?php echo $this->i('table_headings.personnel_identifier'); ?></th>
+        <th><?php echo $this->i('table_headings.name'); ?></th>
+        <th><?php echo $this->i('table_headings.email'); ?></th>
+        <th><?php echo $this->i('table_headings.role'); ?></th>
+        <th class="narrow_column"><?php echo $this->i('actions.edit'); ?></th>
+        <th class="narrow_column"><?php echo $this->i('actions.delete'); ?></th>
       </tr>
     </thead>
     <tbody>
