@@ -3,7 +3,7 @@
     <div id="page_title">
       <h1><?php echo $calls->count() . ' ' . $this->i('titles.calls'); ?></h1>
       <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new'), '/calls/new'); ?>
+        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/calls/new'); ?>
       </div>
     </div>
     <?php if (isset($facts)): ?>
@@ -42,8 +42,8 @@
           <td><?php echo $call->caller()->name; ?></td>
           <td><?php echo $call->operator()->name; ?></td>
           <td><?php echo $call->description; ?></td>
-          <td><?php echo $this->link_to('edit', "/calls/$call->id/edit"); ?></td>
-          <td><?php echo $this->link_to('delete', "/calls/$call->id", 'DELETE'); ?></td>
+          <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/calls/$call->id/edit"); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/calls/$call->id", 'DELETE'); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

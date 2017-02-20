@@ -3,7 +3,7 @@
     <div id="page_title">
       <h1><?php echo $users->count() . ' ' . $this->i('titles.users'); ?></h1>
       <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new'), '/users/new'); ?>
+        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/users/new'); ?>
       </div>
     </div>
     <?php if (isset($facts)): ?>
@@ -27,10 +27,11 @@
   <table class="index_table">
     <thead>
       <tr>
+        <th> <?php echo $this->i('table_headings.personnel_identifier'); ?></th>
         <th> <?php echo $this->i('table_headings.name'); ?></th>
         <th> <?php echo $this->i('table_headings.email'); ?></th>
         <th> <?php echo $this->i('table_headings.role'); ?></th>
-        <th>Manage</th>
+        <th>Edit</th>
         <th> <?php echo $this->i('actions.delete'); ?></th>
       </tr>
     </thead>
@@ -42,9 +43,9 @@
           </td>
           <td><?php echo $user->name; ?></td>
           <td><?php echo $user->email; ?></td>
-          <td><?php echo implode(', ', $user->roles()); ?></td>
-          <td><?php echo $this->link_to('manage', "/users/$user->id/edit"); ?></td>
-            <td><?php echo $this->link_to('delete', "/users/$user->id", 'DELETE'); ?></td>
+          <td><?php echo $user->role; ?></td>
+          <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/users/$user->id/edit"); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/users/$user->id", 'DELETE'); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

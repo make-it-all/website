@@ -3,7 +3,7 @@
     <div id="page_title">
       <h1><?php echo $problems->count() . ' ' . $this->i('titles.problems'); ?></h1>
       <div id="page_actions">
-        <?php echo $this->link_to($this->i('actions.new'), '/problems/new'); ?>
+        <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/problems/new'); ?>
       </div>
     </div>
   </div>
@@ -45,8 +45,8 @@
           <td><?php echo $problem->description; ?></td>
           <td><?php echo $problem->assigned_to->name; ?></td>
           <td><?php echo $problem->solution_id; ?></td>
-          <td><?php echo $this->link_to('edit', "/problems/$problem->id/edit"); ?></td>
-          <td><?php echo $this->link_to('delete', "/problems/$problem->id", 'DELETE'); ?></td>
+          <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/problems/$problem->id/edit"); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/problems/$problem->id", 'DELETE'); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>
