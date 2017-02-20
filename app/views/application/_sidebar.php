@@ -7,8 +7,6 @@
     <?php echo $this->link_to($this->i('titles.problems'), '/problems'); ?>
     <?php echo $this->link_to($this->i('titles.personnel'), '/personnel'); ?>
     <?php echo $this->link_to($this->i('titles.users'), '/users'); ?>
-    <?php echo $this->link_to($this->i('titles.reports')); ?>
-    <?php echo $this->link_to($this->i('titles.settings'), '/settings'); ?>
   </section>
   <div id="language_selector">
     <input type="checkbox" class="dropdown_controller" id="language_dropdown"/>

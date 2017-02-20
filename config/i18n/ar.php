@@ -1,7 +1,7 @@
 <?php
 /*
-Internationalisation (English)
-The I18n (English) file contains variables for all the the English translations of the keywords on the website,
+Internationalisation (Arabic)
+The I18n (Arabic) file contains variables for all the the Arabic translations of the keywords on the website,
 The views pull the correct string from the relevant file depending on both browser preference
 and saved user preference.
 
@@ -67,5 +67,5 @@ $table_headings = [
   'description'=>'Description',
   'keywords'=>'Keywords',
   'subject'=>'Subject',
-  'personnel_identifier'=>'Personnel ID'
+  'personnel_identifier'=>'Personnel ID',
 ];
