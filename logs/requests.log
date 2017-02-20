@@ -268,3 +268,7 @@ Begin GET to /users on localhost at Mon, 20 Feb 2017 11:05:39 +0000
 Finish 200 in 10.382ms
 Begin GET to /users on localhost at Mon, 20 Feb 2017 11:05:47 +0000
 Finish 200 in 12.136ms
+Begin GET to /personnel on localhost at Mon, 20 Feb 2017 11:07:18 +0000
+Finish 200 in 12.48ms
+Begin GET to /favicon.ico on localhost at Mon, 20 Feb 2017 11:07:18 +0000
+Finish 404 in 0.682ms

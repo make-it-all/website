@@ -33,8 +33,8 @@
         <th><?php echo $this->i('table_headings.description'); ?></th>
         <th><?php echo $this->i('table_headings.assigned_to'); ?></th>
         <th><?php echo $this->i('table_headings.solution_id'); ?></th>
-        <th><?php echo $this->i('actions.edit'); ?></th>
-        <th><?php echo $this->i('actions.delete'); ?></th>
+        <th class="narrow_column"><?php echo $this->i('actions.edit'); ?></th>
+        <th class="narrow_column"><?php echo $this->i('actions.delete'); ?></th>
       </tr>
     </thead>
     <tbody>
