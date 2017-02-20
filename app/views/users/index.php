@@ -43,7 +43,7 @@
           <td><?php echo $user->email; ?></td>
           <td><?php echo $user->role; ?></td>
           <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/users/$user->id/edit"); ?></td>
-          <td><?php echo $this->link_to($this->icon('trash-o'), "/users/$user->id", 'DELETE'); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/users/$user->id", ['method'=>'DELETE']); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

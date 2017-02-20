@@ -46,7 +46,7 @@
           <td><?php echo $problem->assigned_to->name; ?></td>
           <td><?php echo $problem->solution_id; ?></td>
           <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/problems/$problem->id/edit"); ?></td>
-          <td><?php echo $this->link_to($this->icon('trash-o'), "/problems/$problem->id", 'DELETE'); ?></td>
+          <td><?php echo $this->link_to($this->icon('trash-o'), "/problems/$problem->id", ['method'=>'DELETE']); ?></td>
         </tr>
       <?php endforeach; ?>
     </tbody>
