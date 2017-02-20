@@ -14,7 +14,7 @@
             "reference": "2625101154922ccc5c645a95510b3dd592d884a6",
             "shasum": ""
         },
-        "time": "2017-02-20 08:50:43",
+        "time": "2017-02-20T08:50:43+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -54,7 +54,7 @@
             "reference": "ce4d94bae46296d2e25275e8a8da3ea41be22937",
             "shasum": ""
         },
-        "time": "2017-02-20 07:21:02",
+        "time": "2017-02-20T07:21:02+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -96,7 +96,7 @@
             "hexmodr/chronicle": "dev-master",
             "hexmodr/rack": "dev-master"
         },
-        "time": "2017-02-20 09:27:09",
+        "time": "2017-02-20T09:27:09+00:00",
         "type": "project",
         "installation-source": "source",
         "autoload": {
