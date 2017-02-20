@@ -39,10 +39,10 @@
               }
             ?>
           </td>
-          <?php if ($current_user->is_specialist()):?>
-            <td><?php echo $problem->assigned_to_id == $current_user->id(); ?></td>
-          <?php endif; ?>
           <td><?php echo $problem->solution_id; ?></td>
+          <?php if ($current_user->is_specialist()):?>
+            <td><?php echo $problem->assigned_to->id() == $current_user->id() ? $this->icon('cross') : $this->icon('check'); ?></td>
+          <?php endif; ?>
           <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/problems/$problem->id/edit"); ?></td>
           <td><?php echo $this->link_to($this->icon('trash-o'), "/problems/$problem->id", ['method'=>'DELETE']); ?></td>
         </tr>
