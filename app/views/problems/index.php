@@ -43,7 +43,13 @@
           <td><?php echo $problem->subject; ?></td>
           <td><?php echo $problem->keywords; ?></td>
           <td><?php echo $problem->description; ?></td>
-          <td><?php echo $problem->assigned_to->name; ?></td>
+          <td>
+            <?php
+              if ($problem->assigned_to !== null) {
+                echo $problem->assigned_to->name;
+              }
+            ?>
+          </td>
           <td><?php echo $problem->solution_id; ?></td>
           <td><?php echo $this->link_to($this->icon('pencil-square-o'), "/problems/$problem->id/edit"); ?></td>
           <td><?php echo $this->link_to($this->icon('trash-o'), "/problems/$problem->id", ['method'=>'DELETE']); ?></td>
