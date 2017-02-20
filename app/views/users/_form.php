@@ -1,9 +1,15 @@
-<div class="page_actions">
+<!-- <div class="page_actions">
   <h1>Create User</h1>
+</div> -->
+<div id="form_page_head">
+  <div id="page_title">
+    <h1>Create User</h1>
+  </div>
   <?php if (!$user->personnel_id === null): ?>
     <a href="/personnel/<?php echo $user->personnel_id; ?>"></a>
   <?php endif; ?>
 </div>
+
 
 <?php $this->form_for($user, '/users', ['class'=>'narrow_form']); ?>
 

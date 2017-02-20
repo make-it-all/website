@@ -36,17 +36,13 @@
   flex-grow: 1;
 }
 
-#page_info h1{
-  display: inline-block;
-  font-size: 180%;
-}
-
 #page_info p{
   opacity: 0.6;
 }
 
 #page_title h1 {
   vertical-align: middle;
+  display: inline-block;
 }
 
 #page_title a{
@@ -116,7 +112,8 @@
   width: 270px;
 }
 
-#main_call_form{
-  display: inline-block;
-  flex-grow:1;
+
+#form_page_head {
+  display: flex;
+  padding: 15px 30px;
 }
