@@ -13,6 +13,12 @@ $header = [
   'logout'=>'登出',
 ];
 
+$login = [
+  'sign_in'=>'签到',
+  'password'=>'密码',
+  'login'=>'登录',
+];
+
 $pagination = [
   'showing_text'=>'显示 {{low}}-{{high}} 的 {{total}}',
 ];
@@ -62,5 +68,4 @@ $table_headings = [
   'description'=>'描述',
   'keywords'=>'关键字',
   'subject'=>'主题',
-  'personnel_identifier'=>'Personnel ID',
 ];

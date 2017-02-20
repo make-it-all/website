@@ -1,7 +1,7 @@
 <div id="page_head">
   <div id="page_info">
     <div id="page_title">
-      <h1><?php echo $calls->count() . ' ' . $this->i('titles.calls'); ?></h1>
+      <h1><?php echo Call::count() . ' ' . $this->i('titles.calls'); ?></h1>
       <div id="page_actions">
         <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/calls/new'); ?>
       </div>
@@ -13,11 +13,6 @@
         <?php endforeach; ?>
       </div>
     <?php endif; ?>
-  </div>
-  <div id="page_filter">
-    <div class="search_bar">
-      <?php $this->render('search_form'); ?>
-    </div>
   </div>
 </div>
 

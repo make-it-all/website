@@ -9,22 +9,24 @@ class Call extends \Chronicle\Base {
   }
 
   public function caller(){
-    return Personnel::find($this->caller_id);
+    return Personnel::find_by(['id'=>$this->caller_id]);
   }
 
-  public function operator(){
-
-    return User::find($this->operator_id);
+  public function get_operator(){
+    return User::find_by(['id'=>$this->operator_id]);
   }
 
   public function updated_by(){
-    return User::find($this->updated_by);
+    return User::find_by(['id'=>$this->updated_by]);
   }
 
   public static $validations = [
     'operator_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
     'caller_id' => ['presence'=>true, 'numericality'=>true, 'length'=>['max',11]],
     'description' => ['presence'=>true, ],
-
   ];
+
+  public function operator() {
+    return User::find_by(['id'=>$this->operator_id]);
+  }
 }

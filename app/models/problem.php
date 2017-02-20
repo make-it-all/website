@@ -18,15 +18,14 @@ class Problem extends \Chronicle\Base {
     'description' => ['presence'=>true],
     'subject' => ['presence'=>true],
     'keywords' => ['presence'=>true]
-
   ];
 
   public function get_assigned_to() {
-    return User::find($this->get_attribute('assigned_to')->get());
+    return User::find_by(['id' => $this->get_attribute('assigned_to')->get()]);
   }
 
   public function get_submitted_by() {
-    return User::find($this->get_attribute('submitted_by')->get());
+    return User::find_by(['id' => $this->get_attribute('submit')->get()]);
   }
 
 }

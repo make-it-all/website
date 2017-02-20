@@ -1,7 +1,7 @@
 <div id="page_head">
   <div id="page_info">
     <div id="page_title">
-      <h1><?php echo $users->count() . ' ' . $this->i('titles.users'); ?></h1>
+      <h1><?php echo User::count() . ' ' . $this->i('titles.users'); ?></h1>
       <?php echo $this->link_to($this->i('actions.new').$this->icon('plus'), '/users/new'); ?>
     </div>
     <?php if (isset($facts)): ?>
@@ -11,11 +11,6 @@
         <?php endforeach; ?>
       </div>
     <?php endif; ?>
-  </div>
-  <div id="page_filter">
-    <div class="search_bar">
-      <?php $this->render('search_form'); ?>
-    </div>
   </div>
 </div>
 
