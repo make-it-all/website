@@ -15,11 +15,11 @@ class Personnel extends \Chronicle\Base {
   ];
 
   public function branch() {
-    return Branch::find($this->branch_id);
+    return Branch::find_by(['id'], $this->branch_id);
   }
 
   public function department() {
-    return Department::find($this->department_id);
+    return Department::find_by(['id'], $this->department_id);
   }
 
   public function user() {

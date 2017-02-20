@@ -13,7 +13,7 @@ class Solution extends ApplicationModel {
   public static $table_name = 'solutions';
 
   public function get_submitted_by() {
-    return User::find($this->get_attribute('submitted_by')->get());
+    return User::find_by(['id'], $this->get_attribute('submitted_by')->get());
   }
 
   public static $validations = [
