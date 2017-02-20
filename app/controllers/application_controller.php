@@ -9,8 +9,6 @@ class ApplicationController extends \Controller\Base {
     if (get_called_class() !== 'SessionsController' && !$this->logged_in()) {
       $this->redirect_to('/login');
     }
-
-    ApplicationModel::set_author($this->current_user);
     $this->current_user = $this->current_user();
   }
 

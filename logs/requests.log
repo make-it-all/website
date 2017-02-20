@@ -1,0 +1,16 @@
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:45:52 +0000
+Finish 500 in 6.561ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:46:03 +0000
+Finish 500 in 2.642ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:46:04 +0000
+Finish 500 in 5.269ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:46:18 +0000
+Finish 500 in 6.509ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:47:27 +0000
+Finish 500 in 2.244ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:47:44 +0000
+Finish 500 in 2.286ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 09:47:45 +0000
+Finish 500 in 2.327ms
+Begin GET to /users on localhost at Mon, 20 Feb 2017 09:47:47 +0000
+Finish 404 in 0.448ms
