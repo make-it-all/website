@@ -15,13 +15,13 @@ $header = [
 ];
 
 $login = [
-  'sign_in'=>'Sign In',
-  'password'=>'Password',
-  'login'=>'Login',
+  'sign_in'=>'Anmelden',
+  'password'=>'Passwort',
+  'login'=>'Einloggen',
 ];
 
 $pagination = [
-  'showing_text'=>'Showing 1-6 of 136',
+  'showing_text'=>'Zeigt {{low}}-{{high}} von {{total}}',
 ];
 
 $titles = [
@@ -54,8 +54,8 @@ $table_headings = [
   'email'=>'Email',
   'role'=>'Arbeit',
   'type'=>'Art',
-  'operator_id'=>'Operator ID',
-  'caller_id'=>'Anrufer ID',
+  'operator_id'=>'Operator',
+  'caller_id'=>'Anrufer',
   'updated_by'=>'Aktualisiert von',
   'job_title'=>'Berufsbezeichnung',
   'branch_id'=>'Niederlassung',
@@ -65,7 +65,7 @@ $table_headings = [
   'submitted_by'=>'Eingereicht von',
   'assigned_to'=>'Zugewiesen an',
   'solution_id'=>'Lösung',
-  'description'=>'Description',
-  'keywords'=>'Keywords',
-  'subject'=>'Subject',
+  'description'=>'Beschreibung',
+  'keywords'=>'Schlüsselwörter',
+  'subject'=>'Thema',
 ];

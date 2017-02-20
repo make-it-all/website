@@ -9,63 +9,63 @@ and saved user preference.
 */
 
 $header = [
-  'signed_in_message'=>'Signed in as <b>{{name}}</b> - ',
-  'logout'=>'Log Out',
+  'signed_in_message'=>'{{name}} - وقعت في مثل',
+  'logout'=>'الخروج',
 ];
 
 $login = [
-  'sign_in'=>'Sign In',
-  'password'=>'Password',
-  'login'=>'Login',
+  'sign_in'=>'تم الدخول',
+  'password'=>'كلمه السر',
+  'login'=>'تسجيل الدخول',
 ];
 
 $pagination = [
-  'showing_text'=>'Showing {{low}}-{{high}} of {{total}}',
+  'showing_text'=>'تبين {{low}}-{{high}} من {{total}}',
 ];
 
 $titles = [
-  'dashboard'=>'Dashboard',
-  'calls'=>'Calls',
-  'problems'=>'Problems',
-  'personnel'=>'Personnel',
-  'users'=>'Users',
-  'reports'=>'Reports',
-  'title'=>'Make It All',
+  'dashboard'=>'لوحة القيادة',
+  'calls'=>'المكالمات',
+  'problems'=>'مشاكل',
+  'personnel'=>'شؤون الموظفين',
+  'users'=>'المستخدمين',
+  'reports'=>'تقارير',
+  'title'=>'جعل ذلك للجميع',
   ];
 
 $actions = [
-  'new'=>'New',
-  'all'=>'All',
-  'edit'=>'Edit',
-  'delete'=>'Delete',
-  'search'=>'Search',
+  'new'=>'الجديد',
+  'all'=>'الكل',
+  'edit'=>'تصحيح',
+  'delete'=>'حذف',
+  'search'=>'بحث',
 ];
 
 $roles = [
-  'admin'=>'Admin',
-  'operator'=>'Operator',
-  'specialist'=>'Specialist',
+  'admin'=>'مشرف',
+  'operator'=>'المشغل أو العامل',
+  'specialist'=>'متخصص',
   'lboroadmin'=>'Lboro Admin',
 ];
 
 $table_headings = [
-  'name'=>'Name',
-  'email'=>'Email',
-  'role'=>'Role',
-  'type'=>'Type',
-  'operator_id'=>'Operator',
-  'caller_id'=>'Caller',
-  'updated_by'=>'Updated By',
-  'job_title'=>'Job Title',
-  'branch_id'=>'Branch',
-  'department_id'=>'Department',
-  'telephone_number'=>'Phone Number',
-  'specialization'=>'Specialization',
-  'personnel_identifier'=>'Personnel Id',
-  'submitted_by'=>'Submitted By',
-  'assigned_to'=>'Assigned To',
-  'solution_id'=>'Solution',
-  'description'=>'Description',
-  'keywords'=>'Keywords',
-  'subject'=>'Subject',
+  'name'=>'اسم',
+  'email'=>'البريد الإلكتروني',
+  'role'=>'وظيفة',
+  'type'=>'اكتب',
+  'operator_id'=>'المشغل أو العامل',
+  'caller_id'=>'المتصل',
+  'updated_by'=>'تم التحديث بواسطة',
+  'job_title'=>'المسمى الوظيفي',
+  'branch_id'=>'فرع شجرة',
+  'department_id'=>' قسم، أقسام',
+  'telephone_number'=>'رقم الهاتف',
+  'specialization'=>'تخصص',
+  'personnel_identifier'=>'معرف شؤون الموظفين',
+  'submitted_by'=>'المقدمة من',
+  'assigned_to'=>'مخصص ل',
+  'solution_id'=>'حل',
+  'description'=>'وصف',
+  'keywords'=>'الكلمات الدالة',
+  'subject'=>'موضوع',
 ];
