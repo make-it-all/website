@@ -10,4 +10,14 @@ $(function(){
     $form.submit()
   });
 
+  $('[data-personnel-selector]').on('change', function(){
+    console.log($(this).val())
+    $("#yourdropdownid option:selected").text();
+    var $selected = $(this).find("option:selected");
+    var text = $selected.text();
+    var email = $selected.data('email');
+    $(this).closest('form').find('#name_field').val(text);
+    $(this).closest('form').find('#email_field').val(email);
+  });
+
 });

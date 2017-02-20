@@ -8,7 +8,8 @@ class User extends \Chronicle\Base {
     'name' => ['presence'=>true, 'length'=>['max', 255]],
     'email' => ['presence'=>true, 'length'=>['max', 255], 'format'=>true, 'uniqueness'=>true],
     'password_digest' => ['presence'=>true, 'length'=>['max', 255]],
-    'personel_id' => ['presence'=>true]
+    'personnel_id' => ['presence'=>true],
+    'password' => ['presence'=>true]
   ];
 
   public static function new($attrs=[]) {

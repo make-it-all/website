@@ -1,7 +1,8 @@
 <?php if ($record->errors()->any()): ?>
-  <div class="form_errors">
+  <h4>Sorry, errors prevented this form from saving.</h4>
+  <ul class="form_errors">
     <?php foreach ($record->errors()->full_messages() as $msg): ?>
-      <div class="error"><?php echo $msg; ?></div>
+      <li class="error"><?php echo $msg; ?></li>
     <?php endforeach; ?>
-  </div>
+  </ul>
 <?php endif; ?>
