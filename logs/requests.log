@@ -76,3 +76,5 @@ Begin GET to / on localhost at Mon, 20 Feb 2017 10:02:10 +0000
 Finish 500 in 21.384ms
 Begin GET to / on localhost at Mon, 20 Feb 2017 10:02:15 +0000
 Finish 200 in 4.801ms
+Begin GET to / on localhost at Mon, 20 Feb 2017 10:03:23 +0000
+Finish 200 in 6.981ms
