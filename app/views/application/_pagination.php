@@ -11,7 +11,7 @@
           }
 
           for ($i=0; $i < $total; $i++) {
-            echo $this->link_to($i+1, Application::$request->path.'?page=' . ($i+1));
+            echo $this->link_to($i+1, Application::$request->path.'?page=' . ($i+1), ['class'=>]);
           }
         }
       ?>
