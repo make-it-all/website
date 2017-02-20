@@ -12,7 +12,7 @@
       <option value="">-- Please Select -- </option>
       <?php foreach (User::all()->order('name ASC')->results() as $operator): ?>
         <?php if ($call->operator_id == $operator->id()): ?>
-          <option value="<?php echo $operator->id(); selected ?>"><?php echo $operator->name; ?></option>
+          <option value="<?php echo $operator->id(); ?>" selected><?php echo $operator->name; ?></option>
         <?php else: ?>
           <option value="<?php echo $operator->id(); ?>"><?php echo $operator->name; ?></option>
         <?php endif; ?>

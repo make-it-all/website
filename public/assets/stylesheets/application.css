@@ -117,3 +117,8 @@
   display: flex;
   padding: 15px 30px;
 }
+
+#page_actions {
+  display: inline-block;
+  vertical-align: middle;
+}
