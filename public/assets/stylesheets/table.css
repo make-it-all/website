@@ -25,6 +25,7 @@ th {
     font-family: "Noto Sans", Sans-Serif;
     padding: 10px 15px;
     position: relative;
+    max-height: 20px;
 
 }
 

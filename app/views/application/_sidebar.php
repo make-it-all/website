@@ -1,11 +1,14 @@
 <div id="side_bar">
   <section>
-    <?php echo $this->link_to($this->i('titles.dashboard'), '/Dashboard'); ?>
-  </section>
-  <section>
     <?php echo $this->link_to($this->i('titles.calls'), '/calls'); ?>
+    </section>
+    <section>
     <?php echo $this->link_to($this->i('titles.problems'), '/problems'); ?>
+    </section>
+    <section>
     <?php echo $this->link_to($this->i('titles.personnel'), '/personnel'); ?>
+    </section>
+    <section>
     <?php echo $this->link_to($this->i('titles.users'), '/users'); ?>
   </section>
   <div id="language_selector">

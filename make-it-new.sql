@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2017 at 12:36 PM
+-- Generation Time: Feb 20, 2017 at 03:06 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -145,7 +145,7 @@ CREATE TABLE `problems` (
   `worked_on` tinyint(1) NOT NULL DEFAULT '0',
   `solution_id` int(11) UNSIGNED DEFAULT NULL,
   `description` text COLLATE utf8_unicode_ci,
-  `subject` text COLLATE utf8_unicode_ci,
+  `specializations` text COLLATE utf8_unicode_ci,
   `keywords` text COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
@@ -153,7 +153,7 @@ CREATE TABLE `problems` (
 -- Dumping data for table `problems`
 --
 
-INSERT INTO `problems` (`id`, `call_id`, `submitted_by`, `assigned_to`, `worked_on`, `solution_id`, `description`, `subject`, `keywords`) VALUES
+INSERT INTO `problems` (`id`, `call_id`, `submitted_by`, `assigned_to`, `worked_on`, `solution_id`, `description`, `specializations`, `keywords`) VALUES
 (1, 1, 2, 10, 1, 3, 'Monitor randomly turns off, very annoying', 'Monitor', 'Monitor, Loss of power'),
 (2, 2, 6, 9, 0, 0, 'Forgotten password, can\'t log on', '', 'Password, Forgotten'),
 (3, 0, 5, 8, 1, 5, 'Accidentally uninstalled program (word), not urgent but would prefer quick response', 'Microsoft Word', 'Uninstalled, Word');
